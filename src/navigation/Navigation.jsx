@@ -32,6 +32,7 @@ const Navigation = () => {
             <Drawer.Screen
                 name={componentsNames.Home.name}
                 component={HomeScreen}
+                options={{headerTitle:""}}
             />
             <Drawer.Screen
                 name={componentsNames.Activities.name}

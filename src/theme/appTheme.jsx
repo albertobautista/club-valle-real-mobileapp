@@ -57,5 +57,21 @@ export const styles = StyleSheet.create({
     globalBackground:{
         flex:1,
         backgroundColor:"white"
+    },
+    scheduleContainer:{
+        marginVertical:30,
+        // backgroundColor:"red"
+    },
+    scheduleTitleText:{
+        fontSize:33,
+        textAlign:"center",
+        marginBottom:20,
+        color:"#316767"
+    },
+    scheduleText:{
+        fontSize:19,
+        textAlign:"center",
+
+
     }
 });

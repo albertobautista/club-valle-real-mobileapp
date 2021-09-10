@@ -18,11 +18,7 @@ const ActivitiesScreen = ({navigation}) => {
 
     return (
         <View style={styles.globalBackground}>
-            <View style={{width:500}}>
-            <Image source={require('../../assets/img/logoValle.png')}
-                style={{ width: 400, height: 103 }}
-                />
-            </View>
+           <Text>Activities</Text>
            
         </View>
     )
