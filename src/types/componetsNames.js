@@ -5,6 +5,6 @@ export const componentsNames = {
     },
     Activities: {
         id:2,
-        name:"ActivitiesScreen"
+        name:"ActivitiesNavigation"
     }
 }

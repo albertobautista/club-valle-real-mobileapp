@@ -4,7 +4,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import HomeScreen from '../screens/HomeScreen';
 import DrawerMenu from '../components/DrawerMenu';
 import { componentsNames } from '../types/componetsNames';
-import ActivitiesScreen from '../screens/ActivitiesScreen';
+import {ActivitiesNavigation} from './ActivitiesNavigation';
 
 const Drawer = createDrawerNavigator();
 
@@ -36,7 +36,8 @@ const Navigation = () => {
             />
             <Drawer.Screen
                 name={componentsNames.Activities.name}
-                component={ActivitiesScreen}
+                component={ActivitiesNavigation}
+                options={{headerTitle:""}}
             />
         </Drawer.Navigator>
     )
