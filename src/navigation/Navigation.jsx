@@ -11,6 +11,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import ConfigurationScreen from '../screens/ConfigurationScreen';
 import { ThemeContext } from '../context/themeContext/ThemeContext';
 import { TopTabNavigation } from './TopTabNavigation';
+import RestaurantScreen from '../screens/RestaurantScreen';
+import GalleryScreen from '../screens/GalleryScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -52,6 +54,19 @@ const Navigation = () => {
                     component={TopTabNavigation}
                     options={{headerTitle: () => <HeaderIcon /> }}
                 />
+                
+                <Drawer.Screen
+                    name={componentsNames.Restaurant.name}
+                    component={RestaurantScreen}
+                    options={{headerTitle: () => <HeaderIcon /> }}
+                />
+
+                <Drawer.Screen
+                    name={componentsNames.Gallery.name}
+                    component={GalleryScreen}
+                    options={{headerTitle: () => <HeaderIcon /> }}
+                />
+
                 <Drawer.Screen
                     name={componentsNames.Configuration.name}
                     component={ConfigurationScreen}

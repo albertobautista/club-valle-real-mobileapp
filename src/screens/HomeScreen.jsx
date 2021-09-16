@@ -23,7 +23,7 @@ const HomeScreen = ({navigation}) => {
     return (
         <ScrollView style={{...styles.globalBackground, backgroundColor:colors.card}}>
             <View style={{ alignItems:"center"}}>
-                <HorizontalSlider title="Bienvenido" gallery={gallery}/>
+                <HorizontalSlider title="Bienvenido" gallery={gallery} />
             </View>
             <View style={styles.scheduleContainer}>
                 <View>

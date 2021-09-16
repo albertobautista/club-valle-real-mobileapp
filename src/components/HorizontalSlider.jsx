@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, FlatList } from 'react-native'
 import GalleryItem from './GalleryItem'
 
-const HorizontalSlider = ({title, gallery}) => {
+const HorizontalSlider = ({title, gallery, height=220,width=410}) => {
     return (
         <View style={{
             height: (title) ? 260 : 220
@@ -11,7 +11,7 @@ const HorizontalSlider = ({title, gallery}) => {
             <FlatList
                 data={gallery}
                 renderItem={ ({item}) => (
-                    <GalleryItem gallery={item} height={220} width={410}/>
+                    <GalleryItem gallery={item} height={height} width={width}/>
                 )}
                 keyExtractor={( item ) => item.id.toString()}
                 horizontal={true}

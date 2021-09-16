@@ -22,7 +22,7 @@ export const menuItems =[
         title: "Restaurante",
         icon: "restaurant-outline",
         color: "black",
-        component: "ds"
+        component: componentsNames.Restaurant.name
 
     },
     {
@@ -30,7 +30,7 @@ export const menuItems =[
         title: "Galería",
         icon: "easel-outline",
         color: "black",
-        component: "ds"
+        component: componentsNames.Gallery.name
 
     },
     {
@@ -49,4 +49,5 @@ export const menuItems =[
         component: componentsNames.Configuration.name
 
     },
+   
 ]
