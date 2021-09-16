@@ -15,7 +15,7 @@ const HomeScreen = ({navigation}) => {
         navigation.setOptions({
             headerLeft : () => 
                ( <TouchableOpacity onPress={()=> navigation.toggleDrawer()}>
-                    <Ionicons name="md-menu" size={40} color="black"  style={{marginLeft:10, color:"#316767"}}/>
+                    <Ionicons name="md-menu" size={40} color="black"  style={{marginLeft:10, color:colors.primary}}/>
                 </TouchableOpacity>),
         })
     }, [])

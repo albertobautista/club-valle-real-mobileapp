@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { Platform, Text, TouchableOpacity } from "react-native";
-import { TopTabNavigator } from "./TopTabNavigator";
+import { TopTabNavigation } from "./TopTabNavigation";
 import { Ionicons } from '@expo/vector-icons';
 
 
@@ -35,7 +35,7 @@ function TabsAndroid() {
             case "Tab1Screen":
               iconName = "camera"
             break;
-            case "TopTabNavigator":
+            case "TopTabNavigation":
               iconName = "tablet-landscape"
             break;
             case "StackNavigator":
@@ -61,7 +61,7 @@ function TabsAndroid() {
 
     >
 
-      <BottomTabAndroid.Screen options={{title:"TopTabNavigator"}} name="TopTabNavigator" component={TopTabNavigator} />
+      <BottomTabAndroid.Screen options={{title:"TopTabNavigation"}} name="TopTabNavigation" component={TopTabNavigation} />
 
     </BottomTabAndroid.Navigator>
   );
@@ -84,7 +84,7 @@ const TabsIOS = () => {
             case "Tab1Screen":
               iconName = "camera"
             break;
-            case "TopTabNavigator":
+            case "TopTabNavigation":
               iconName = "tablet-landscape"
             break;
             case "StackNavigator":
@@ -107,7 +107,7 @@ const TabsIOS = () => {
       
     }
     >
-      <BottomtabIOS.Screen options={{headerShown: false, title:"Actividades"}} name="TopTabNavigator" component={TopTabNavigator} />
+      <BottomtabIOS.Screen options={{headerShown: false, title:"Actividades"}} name="TopTabNavigation" component={TopTabNavigation} />
 
     </BottomtabIOS.Navigator>
   );

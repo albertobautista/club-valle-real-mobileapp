@@ -10,6 +10,7 @@ import HeaderIcon from '../components/HeaderIcon';
 import { NavigationContainer } from '@react-navigation/native';
 import ConfigurationScreen from '../screens/ConfigurationScreen';
 import { ThemeContext } from '../context/themeContext/ThemeContext';
+import { TopTabNavigation } from './TopTabNavigation';
 
 const Drawer = createDrawerNavigator();
 
@@ -48,7 +49,7 @@ const Navigation = () => {
                 />
                 <Drawer.Screen
                     name={componentsNames.Activities.name}
-                    component={ActivitiesNavigation}
+                    component={TopTabNavigation}
                     options={{headerTitle: () => <HeaderIcon /> }}
                 />
                 <Drawer.Screen
