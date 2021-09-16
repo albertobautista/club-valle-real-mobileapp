@@ -52,11 +52,9 @@ export const styles = StyleSheet.create({
     },
     menuText: {
         fontSize: 20,
-        // color:"#ffffff"
     },
     globalBackground:{
         flex:1,
-        backgroundColor:"white"
     },
     scheduleContainer:{
         marginVertical:30,
@@ -66,12 +64,9 @@ export const styles = StyleSheet.create({
         fontSize:33,
         textAlign:"center",
         marginBottom:20,
-        color:"#316767"
     },
     scheduleText:{
-        fontSize:19,
+        fontSize:17,
         textAlign:"center",
-
-
     }
 });

@@ -41,4 +41,12 @@ export const menuItems =[
         component: "ds"
 
     },
+    {
+        id:6,
+        title: "Configuración",
+        icon: "settings-outline",
+        color: "black",
+        component: componentsNames.Configuration.name
+
+    },
 ]
