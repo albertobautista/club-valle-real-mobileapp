@@ -26,7 +26,7 @@ export const sportActivities =[
     },
     {
         id:6,
-        name:"Fútbol",
+        name:"Soccer",
         icon:"football"
     },
     {

@@ -15,6 +15,10 @@ export const componentsNames = {
         id:4,
         name:"GalleryScreen"
     },
+    Events: {
+        id:5,
+        name:"EventsScreen"
+    },
     Configuration: {
         id:6,
         name:"ConfigurationScreen"

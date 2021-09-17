@@ -38,7 +38,7 @@ export const menuItems =[
         title: "Eventos",
         icon: "calendar-outline",
         color: "black",
-        component: "ds"
+        component: componentsNames.Events.name
 
     },
     {

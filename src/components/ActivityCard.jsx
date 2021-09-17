@@ -18,7 +18,7 @@ const ActivityCard = ({activity}) => {
         <TouchableOpacity
             activeOpacity={0.9}
             onPress={() => 
-                navigation.navigate("PokemonScreen",{simplePokemon: pokemon, color:"#316767"}
+                navigation.navigate("ActivityDetailScreen",{activity:activity}
             )}
             >
             <View style={{...styles.cardContainer, width: windowWidth *0.4, backgroundColor:colors.primary, marginTop:20}}> 

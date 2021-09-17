@@ -1,16 +1,17 @@
 import React, { useContext, useEffect } from 'react'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import SportsActivitiesScreen from '../screens/SportsActivitiesScreen';
 
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Text, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { ThemeContext } from '../context/themeContext/ThemeContext';
-import { color } from 'react-native-reanimated';
-import CulturalActivitiesScreen from '../screens/CulturalActivitiesScreen';
+
+import {SportsScreenNavigator, CulturalScreenNavigator} from './StackNavigation';
+
 
 
 const Tab = createMaterialTopTabNavigator();
+
 
 
 export const TopTabNavigation = ({navigation}) => {
@@ -73,8 +74,9 @@ export const TopTabNavigation = ({navigation}) => {
         }) 
     }
     >
-      <Tab.Screen options={{title:"Deportivas"}} name="SportsActivitiesScreen" component={SportsActivitiesScreen} />
-      <Tab.Screen options={{title:"Culturales"}} name="CulturalActivitiesScreen" component={CulturalActivitiesScreen} />
+      <Tab.Screen options={{title:"Deportivas"}} name="SportsScreenNavigator" component={SportsScreenNavigator} />
+      <Tab.Screen options={{title:"Culturales"}} name="CulturalScreenNavigator" component={CulturalScreenNavigator} />
+
     </Tab.Navigator>
   );
 }

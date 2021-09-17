@@ -5,6 +5,7 @@ import { ThemeContext } from '../context/themeContext/ThemeContext';
 import { styles } from '../theme/appTheme';
 import { albums } from '../data/galleryAlbums';
 import ItemSeparator from '../components/ItemSeparator';
+import { AnimatedImage } from '../components/AnimatedImage';
 
 
 const GalleryScreen = ({navigation}) => {
@@ -45,9 +46,9 @@ const ImageAlbum = ({picture}) =>{
     const windowWidth = Dimensions.get("window").width
     const urlImage = picture.url
     return(
-        <Image
-            source={{uri:urlImage}}
-            style={{width:windowWidth, height:200}}
+        <AnimatedImage
+            uri={urlImage}
+            style={{width: windowWidth, height:200}}
         />
     )
 }
