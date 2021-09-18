@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import { View, Text, TouchableOpacity, Image, ScrollView } from 'react-native'
+import { View, Text, TouchableOpacity, Image, ScrollView, Dimensions } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
 import { styles } from '../theme/appTheme';
 import HorizontalSlider from '../components/HorizontalSlider';
@@ -7,7 +7,7 @@ import { gallery } from '../data/gallery';
 import { ThemeContext } from '../context/themeContext/ThemeContext';
 
 
-
+const windowWidth = Dimensions.get("screen").width
 const HomeScreen = ({navigation}) => {
     const {theme:{colors}} = useContext(ThemeContext)
 
@@ -23,7 +23,7 @@ const HomeScreen = ({navigation}) => {
     return (
         <ScrollView style={{...styles.globalBackground, backgroundColor:colors.card}}>
             <View style={{ alignItems:"center"}}>
-                <HorizontalSlider title="Bienvenido" gallery={gallery} />
+                <HorizontalSlider title="Bienvenido" gallery={gallery} width={windowWidth*0.97} />
             </View>
             <View style={styles.scheduleContainer}>
                 <View>

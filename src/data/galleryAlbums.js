@@ -1,73 +1,104 @@
 export const albums = [
     {
-        albumTitle: "Independencia",
+        albumTitle: "Partido amistoso fútbol",
         data: [
             {
                 id:1,
-                url: "https://clubvallereal.com/imgHome/bg03.jpg",
+                url: "https://clubvallereal.com/appImages/gallery/gallery1.jpg",
                 name:"Primera"
             },
             {
                 id:2,
-                url: "https://clubvallereal.com/imgHome/bg03.jpg",
-                name:"Segunda"
-            }
-        ]
-    },
-    {
-        albumTitle: "Spinning",
-        data: [
-            {
-                id:1,
-                url: "https://clubvallereal.com/imgHome/bg04.jpg",
-                name:"Primera"
-            },
-            {
-                id:2,
-                url: "https://clubvallereal.com/imgHome/bg03.jpg",
-                name:"Segunda"
-            }
-        ]
-    },
-    {
-        albumTitle: "Cursos de verano",
-        data: [
-            {
-                id:1,
-                url: "https://clubvallereal.com/imgHome/bg04.jpg",
-                name:"Primera"
-            },
-            {
-                id:2,
-                url: "https://clubvallereal.com/imgHome/bg03.jpg",
-                name:"Segunda"
-            }
-        ]
-    },
-    {
-        albumTitle: "Ballet",
-        data: [
-            {
-                id:1,
-                url: "https://clubvallereal.com/imgHome/bg01.jpg",
-                name:"Primera"
-            },
-            {
-                id:2,
-                url: "https://clubvallereal.com/imgHome/bg02.jpg",
+                url: "https://clubvallereal.com/appImages/gallery/gallery2.jpg",
                 name:"Segunda"
             },
             {
                 id:3,
-                url: "https://clubvallereal.com/imgHome/bg03.jpg",
-                name:"Primera"
-            },
-            {
-                id:4,
-                url: "https://clubvallereal.com/imgHome/bg04.jpg",
+                url: "https://clubvallereal.com/appImages/gallery/gallery3.jpg",
                 name:"Segunda"
             }
         ]
     },
+    {
+        albumTitle: "Noche mexicana",
+        data: [
+            {
+                id:1,
+                url: "https://clubvallereal.com/appImages/gallery/gallery4.jpg",
+                name:"Primera"
+            },
+            {
+                id:2,
+                url: "https://clubvallereal.com/appImages/gallery/gallery5.jpg",
+                name:"Segunda"
+            },
+            {
+                id:3,
+                url: "https://clubvallereal.com/appImages/gallery/gallery6.jpg",
+                name:"Segunda"
+            }
+        ]
+    },
+    {
+        albumTitle: "Torneo de tenis",
+        data: [
+            {
+                id:1,
+                url: "https://clubvallereal.com/appImages/gallery/gallery7.jpg",
+                name:"Primera"
+            },
+            {
+                id:2,
+                url: "https://clubvallereal.com/appImages/gallery/gallery8.jpg",
+                name:"Segunda"
+            },
+        ]
+    },
+    {
+        albumTitle: "Festival de música",
+        data: [
+            {
+                id:1,
+                url: "https://clubvallereal.com/appImages/gallery/gallery9.jpg",
+                name:"Primera"
+            },
+            {
+                id:2,
+                url: "https://clubvallereal.com/appImages/gallery/gallery10.jpg",
+                name:"Segunda"
+            },
+        ]
+    },
+    {
+        albumTitle: "Clase de yoga",
+        data: [
+            {
+                id:1,
+                url: "https://clubvallereal.com/appImages/gallery/gallery11.jpg",
+                name:"Primera"
+            },
+            {
+                id:2,
+                url: "https://clubvallereal.com/appImages/gallery/gallery12.jpg",
+                name:"Segunda"
+            },
+            {
+                id:3,
+                url: "https://clubvallereal.com/appImages/gallery/gallery13.jpg",
+                name:"Segunda"
+            },
+        ]
+    },
+    {
+        albumTitle: "Clase de spinning",
+        data: [
+            {
+                id:1,
+                url: "https://clubvallereal.com/appImages/gallery/gallery14.jpg",
+                name:"Primera"
+            },            
+        ]
+    },
 
 ];
+

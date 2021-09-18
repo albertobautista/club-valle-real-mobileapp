@@ -1,14 +1,17 @@
 import React, { useContext } from 'react'
-import { View, Text, FlatList } from 'react-native'
+import { View, Text, FlatList, Dimensions } from 'react-native'
 import { ThemeContext } from '../context/themeContext/ThemeContext'
 import GalleryItem from './GalleryItem'
+
+
 
 const HorizontalSlider = ({title, gallery, height=220,width=410}) => {
     const {theme:{colors}} = useContext(ThemeContext)
 
     return (
         <View style={{
-            height: (title) ? 260 : 220
+            height: (title) ? 260 : 220,
+            marginBottom:25,
             }}>
             {title && <Text style={{fontSize:35, fontWeight:"bold", textAlign:"center", color:colors.primary, marginBottom:12}}>{title}</Text> }
             <FlatList

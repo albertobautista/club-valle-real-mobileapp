@@ -21,7 +21,7 @@ const GalleryScreen = ({navigation}) => {
         })
     }, [])
     return (
-        <View style={{...styles.globalBackground, backgroundColor:colors.card}}>
+        <View style={{...styles.globalBackground, backgroundColor:colors.card, marginBottom:50}}>
            <SectionList
             sections={albums}
             keyExtractor={(item, index) => item + index}

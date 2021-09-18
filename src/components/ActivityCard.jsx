@@ -9,7 +9,6 @@ import { ThemeContext } from '../context/themeContext/ThemeContext';
 const windowWidth = Dimensions.get("window").width
 
 const ActivityCard = ({activity}) => {
-    console.log("Activity", activity)
     const {theme:{colors}} = useContext(ThemeContext)
 
     const navigation =useNavigation()

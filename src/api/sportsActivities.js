@@ -1,51 +1,51 @@
 export const sportActivities =[
     {
-        id:1,
+        idActivity:1,
         name:"Tenis",
         icon:"tennisball"
     },
     {
-        id:2,
+        idActivity:2,
         name:"Fútbol",
         icon:"football"
     },
     {
-        id:3,
+        idActivity:3,
         name:"Basquetbol",
         icon:"basketball"
     },
     {
-        id:4,
+        idActivity:4,
         name:"Fútbol Americano",
         icon:"ios-american-football"
     },
     {
-        id:5,
+        idActivity:5,
         name:"Baseball",
         icon:"ios-baseball"
     },
     {
-        id:6,
+        idActivity:6,
         name:"Soccer",
         icon:"football"
     },
     {
-        id:7,
+        idActivity:7,
         name:"Spinning",
         icon:"bicycle"
     },
     {
-        id:8,
+        idActivity:8,
         name:"Gimnasio",
         icon:"ios-barbell"
     },
     {
-        id:9,
+        idActivity:9,
         name:"Karate",
         icon:"shirt"
     },
     {
-        id:10,
+        idActivity:10,
         name:"Crossfit",
         icon:"ios-body"
     }

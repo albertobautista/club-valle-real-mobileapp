@@ -2,14 +2,17 @@ import { useNavigation } from '@react-navigation/native';
 import React, { useContext } from 'react'
 import { View, Image, StyleSheet, Text } from 'react-native';
 import { ThemeContext } from '../context/themeContext/ThemeContext';
+import { AnimatedImage } from './AnimatedImage';
 
-const GalleryItem = ({gallery, height = 420, width = 300}) => {
+const GalleryItem = ({gallery, height = 420, width = 300, type}) => {
     const {theme:{colors}} = useContext(ThemeContext)
 
     return (
-        <View style={{width,height, marginHorizontal: 2, paddingBottom:20, paddingHorizontal: 7}}>
+        <View style={{width,height, marginHorizontal: 2, paddingBottom:20, paddingHorizontal: 7, marginRight:5}}>
             <View style={styles.imageContainer}>
-                <Image source={{uri:gallery.picture}} style={styles.image}/>
+
+                <AnimatedImage uri={gallery.picture} style={{...styles.image, width, height}}/>
+
                 
                 
             </View>
@@ -29,6 +32,7 @@ const styles = StyleSheet.create({
         flex:1,
         borderRadius:18,
 
+
     },
     imageContainer:{
         flex:1,
@@ -38,6 +42,7 @@ const styles = StyleSheet.create({
     },
     description:{
         fontSize:20,
+        textAlign:"center"
     }
 });
 export default GalleryItem

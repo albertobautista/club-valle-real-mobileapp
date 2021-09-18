@@ -6,12 +6,16 @@ import { ThemeContext } from '../context/themeContext/ThemeContext'
 import HorizontalSlider from '../components/HorizontalSlider';
 import { dessertsMenu } from '../data/dessertsMenu';
 import { styles } from '../theme/appTheme';
+import { useRestaurant } from '../hooks/useRestaurant';
+
 
 
 
 const RestaurantScreen = ({navigation}) => {
 
     const {theme:{colors}} = useContext(ThemeContext)
+   const {dishesState:{soupDishes, ensaladDishes, mainDishes,dessertDishes}} = useRestaurant()
+   console.log("DISHES,", soupDishes)
 
     useEffect(() => {
         navigation.setOptions({
@@ -23,11 +27,10 @@ const RestaurantScreen = ({navigation}) => {
     }, [])
     return (
         <ScrollView style={{...styles.globalBackground, backgroundColor:colors.card}} showsVerticalScrollIndicator={false}>
-             <HorizontalSlider title="Entradas" gallery={dessertsMenu} width={200} height={200}/>
-             <HorizontalSlider title="Sopas" gallery={dessertsMenu} width={200} height={200}/>
-
-             <HorizontalSlider title="Platos fuertes" gallery={dessertsMenu} width={200} height={200}/>
-             <HorizontalSlider title="Postres" gallery={dessertsMenu} width={200} height={200}/>
+             <HorizontalSlider title="Sopas" gallery={soupDishes} width={195}/>
+             <HorizontalSlider title="Ensaladas" gallery={ensaladDishes} width={195} />
+             <HorizontalSlider title="Platos fuertes" gallery={mainDishes} width={195} />
+             <HorizontalSlider title="Postres" gallery={dessertDishes} width={195}n />
 
         </ScrollView>
     )
