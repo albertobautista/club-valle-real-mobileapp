@@ -27,7 +27,7 @@ const ActivityDetail = ({activity}) => {
                 <Text style={{...styles.title, color:colors.primary }}>Horario</Text>
                 <Text style={styles.regularText}>{schedule}</Text>
 
-                <View style={{marginTop:70, alignItems:"center"}}>
+                <View style={{marginVertical:30, alignItems:"center"}}>
                     <Image
                         source={require('../../assets/img/iconoClubVerde.png')}
                         style={styles.basicSprite}

@@ -22,7 +22,7 @@ const { theme:{colors}} = useContext(ThemeContext)
                 ...styles.headerContainer,
 
         }}>
-          <ImageBackground source={{uri:principalImage}} resizeMode="cover" style={{...styles.image, width: windowWidth}}>
+          <ImageBackground source={{uri:principalImage}}  style={{...styles.image, width: windowWidth}}>
          {/* <TouchableOpacity
           onPress={()=> navigation.pop() }
             activeOpacity={0.5}

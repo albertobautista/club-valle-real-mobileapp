@@ -8,18 +8,7 @@ export const ThemeContext = createContext()
 
 export const ThemeProvider = ({children}) =>{
 
-    useEffect(() => {
-        AppState.addEventListener("change", (status) =>{
-            console.log("status", status)
-            if(status === "active"){
-                (Appearance.getColorScheme() === "light")
-                    ? setDarkTheme()
-                    : setDarkTheme()
-            }
-        })
-   }, [])
-
-    const [theme, dispatch] = useReducer(themeReducer, (Appearance.getColorScheme() === "dark") ? darkTheme : lightTheme)
+    const [theme, dispatch] = useReducer(themeReducer, lightTheme)
 
     const setDarkTheme =() =>{
         dispatch({type:"set_dark_theme"})
