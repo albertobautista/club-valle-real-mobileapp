@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Button, Text, View, StyleSheet, TouchableOpacity, ImageBackground, Dimensions } from 'react-native'
+import { Button, Text, View, StyleSheet, TouchableOpacity, ImageBackground, Dimensions, Platform } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
 
 import { ThemeContext } from '../context/themeContext/ThemeContext'
@@ -10,6 +10,8 @@ const ActivityDetailScreen = ({navigation, route}) => {
 const {activity} = route.params
 console.log("ACTIVITY ", activity)
 const {name, principalImage} = activity
+const {top}=useSafeAreaInsets()
+
 const windowWidth = Dimensions.get("window").width
 
 
@@ -23,13 +25,17 @@ const { theme:{colors}} = useContext(ThemeContext)
 
         }}>
           <ImageBackground source={{uri:principalImage}}  style={{...styles.image, width: windowWidth}}>
-         {/* <TouchableOpacity
-          onPress={()=> navigation.pop() }
-            activeOpacity={0.5}
-            style={{...styles.backButton, top: top + 5}}
-        >
-                    <Ionicons name="arrow-back-outline" color="black" size={35}/>
-                </TouchableOpacity> */}
+            {
+              Platform.OS === "android" && (
+                <TouchableOpacity
+                  onPress={()=> navigation.pop() }
+                  activeOpacity={0.5}
+                  style={{...styles.backButton, top: top}}
+                >
+                  <Ionicons name="arrow-back-outline" color="white" size={35}/>
+                </TouchableOpacity>
+              )
+            }
             <Text style={styles.text}>{name}</Text>
           </ImageBackground>
         </View>

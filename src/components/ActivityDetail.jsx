@@ -30,7 +30,7 @@ const ActivityDetail = ({activity}) => {
                 <View style={{marginVertical:30, alignItems:"center"}}>
                     <Image
                         source={require('../../assets/img/iconoClubVerde.png')}
-                        style={styles.basicSprite}
+                        style={styles.footerLogo}
                     />
                 </View>
             </View>
@@ -51,8 +51,8 @@ const styles = StyleSheet.create({
        fontSize: 19,
        textAlign:"justify"
    },
-   basicSprite:{
-    width:50,
+   footerLogo:{
+    width:60,
     height:50
 }
 });

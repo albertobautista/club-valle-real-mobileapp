@@ -18,9 +18,11 @@ const ConfigurationScreen = ({navigation}) => {
         })
     }, [])
     return (
-        <View style={{...styles.globalBackground, backgroundColor:colors.card, paddingTop:50}}>
+        <View style={{...styles.globalBackground, backgroundColor:colors.card, paddingTop:20}}>
             {/* <HeaderTitle title="Change Theme Screen" /> */}
-            <View style={{flexDirection:"row", justifyContent:"space-between"}}>
+            <Text style={{...styles.scheduleTitleText, color:colors.primary}}>Tema de la aplicación</Text>
+            <View style={{flexDirection:"row", justifyContent:"space-around"}}>
+                
                 <TouchableOpacity 
                     style={{
                         backgroundColor:colors.primary, justifyContent:"center", 
@@ -29,7 +31,7 @@ const ConfigurationScreen = ({navigation}) => {
                     activeOpacity={0.8}
                     onPress={setLightTheme}
                 >
-                    <Text style={{color:colors.text, textAlign:"center", fontSize:22}}>Light</Text>
+                    <Text style={{color:colors.text, textAlign:"center", fontSize:22}}>Claro</Text>
                 </TouchableOpacity>
                 <TouchableOpacity 
                     style={{
@@ -39,7 +41,7 @@ const ConfigurationScreen = ({navigation}) => {
                     activeOpacity={0.8}
                     onPress={setDarkTheme}
                 >
-                    <Text style={{color:colors.text, textAlign:"center", fontSize:22}}>Dark</Text>
+                    <Text style={{color:colors.text, textAlign:"center", fontSize:22}}>Oscuro</Text>
                 </TouchableOpacity>
             </View>
     </View>
