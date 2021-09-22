@@ -16,7 +16,7 @@ const windowWidth = Dimensions.get("window").width
 const { theme:{colors}} = useContext(ThemeContext)
 
     return (
-      <View style={{flex:1}}>
+      <View style={{flex:1, backgroundColor:colors.card}}>
         
         <View style={{
                 ...styles.headerContainer,

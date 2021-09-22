@@ -16,16 +16,16 @@ const ActivityDetail = ({activity}) => {
         >
             <View style={{...styles.container, marginTop:200}}>
                 <Text style={{...styles.title, color:colors.primary }}>Descripción</Text>
-                <Text style={styles.regularText}>{description}</Text>
+                <Text style={{...styles.regularText, color:colors.text}}>{description}</Text>
 
                 <Text style={{...styles.title, color:colors.primary }}>Lugar</Text>
-                <Text style={styles.regularText}>{place}</Text>
+                <Text style={{...styles.regularText, color:colors.text}}>{place}</Text>
 
                 <Text style={{...styles.title, color:colors.primary }}>Maestro</Text>
-                <Text style={styles.regularText}>{teacher}</Text>
+                <Text style={{...styles.regularText, color:colors.text}}>{teacher}</Text>
 
                 <Text style={{...styles.title, color:colors.primary }}>Horario</Text>
-                <Text style={styles.regularText}>{schedule}</Text>
+                <Text style={{...styles.regularText, color:colors.text}}>{schedule}</Text>
 
                 <View style={{marginVertical:30, alignItems:"center"}}>
                     <Image

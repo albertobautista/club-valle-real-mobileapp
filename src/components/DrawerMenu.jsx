@@ -14,10 +14,10 @@ const DrawerMenu = ({navigation}) => {
     <DrawerContentScrollView>
         <View style={styles.avatarContainer}>
             <Image
-                source={{uri: "https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.6435-9/184633889_10158926579550272_4192742971769082865_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=3YGOEHWQXv0AX9cHWxg&_nc_ht=scontent.fgdl3-1.fna&oh=a90900f8fee10bd75bfc90ed46fa2b94&oe=6161908F"}}
+                source={{uri: "https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.6435-9/67369699_10157117066450272_2215780306680545280_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=174925&_nc_ohc=LBhT9NPgSWwAX-Q7jbM&_nc_oc=AQlhO1VTK2RszyuNhPjVWaHhpl_204e1DPOnwjLmVOkoPbQYT4XLXJr-5iuV1ZxW3XFyWeuL4y50lqU2y4bUITaR&_nc_ht=scontent.fgdl3-1.fna&oh=6e9cbc37f80a1736b2440cc92a556e8e&oe=616C8104"}}
                 style={styles.avatar}
             />
-            <Text style={{...styles.informationText, color:colors.text}}>Alberto Chavez</Text>
+            <Text style={{...styles.informationText, color:colors.text}}>Alberto Bautista</Text>
         </View>
         <View style={{...styles.menuContainer, backgroundColor:colors.card}}>
             {
