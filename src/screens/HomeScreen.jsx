@@ -32,6 +32,20 @@ const HomeScreen = ({navigation}) => {
                     <Text style={{...styles.scheduleText, textAlign:"justify", marginHorizontal:20, color:colors.text}}>En Club Valle Real de Guadalajara trabajamos cerca de 100 empleados para ofrecer el mejor servicio y atención a nuestros usuarios, siempre mostrando la mejor actitud.</Text>
                 
                 </View>
+                <View style={{marginTop:35, marginHorizontal:20}}>
+                    <Text style={{...styles.scheduleTitleText, color:colors.primary}}>Horarios</Text>
+                    {/* <Text style={{fontWeight:"bold", color: "#AD8B38",...styles.scheduleText}}>Membresias y Atención al Usuario</Text> */}
+                    <View style={{flexDirection:"row"}}>
+                        <Ionicons name="time-outline" color={colors.primary} size={32}/>
+                        <Text style={{...styles.scheduleText,color:colors.text, marginTop:5, marginLeft:10}}>Lunes - Sábado: 06:00 am - 10:00 pm</Text>
+                    </View>
+                    <View style={{flexDirection:"row", marginTop:10 }}>
+                        <Ionicons name="time-outline" color={colors.primary} size={32}/>
+                        <Text style={{...styles.scheduleText,color:colors.text, marginTop:5,  marginLeft:10}}>Domingo: 06:00 am - 08:00 pm</Text>
+                    </View>
+                    
+                
+                </View>
                 {/* <View style={{marginTop:35}}>
                     <Text style={{fontWeight:"bold",color: "#AD8B38", ...styles.scheduleText}}>Horario Caja General</Text>
                     <Text style={styles.scheduleText}>Lunes a Viernes 9:00 a 14:00 hrs. y 15:00 a 18:00 hrs.</Text>
