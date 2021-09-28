@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import HomeScreen from '../screens/HomeScreen';
@@ -17,72 +17,47 @@ import EventsScreen from '../screens/EventsScreen';
 
 const Drawer = createDrawerNavigator();
 
-const windowWidth = Dimensions.get("window").width
+const windowWidth = Dimensions.get('window').width;
 
 const Navigation = () => {
-    const { theme:{colors}} = useContext(ThemeContext)
+  const {
+    theme: { colors },
+  } = useContext(ThemeContext);
 
-    return (
-        <NavigationContainer>
-            <Drawer.Navigator
-                drawerContent={
-                    (props) =><DrawerMenu {...props} />
-                }
-                screenOptions={{
-                    drawerStyle: {
-                    backgroundColor: colors.card,
-                    // width: 270,
-                    width: windowWidth *0.65,
+  return (
+    <NavigationContainer>
+      <Drawer.Navigator
+        drawerContent={(props) => <DrawerMenu {...props} />}
+        screenOptions={{
+          drawerStyle: {
+            backgroundColor: colors.card,
+            // width: 270,
+            width: windowWidth * 0.65,
 
-                    borderEndWidth:2,
-                    borderEndColor:colors.primary,
-                    },
-                    headerStyle:{
-                        elevation:0,
-                        shadowColor:"transparent",
-                        backgroundColor:colors.card,
-                        
-                    },
-                    headerTitleAlign:"center",
-                    headerTitle: () => <HeaderIcon />
-                    
-                }}
-            >
-                <Drawer.Screen
-                    name={componentsNames.Home.name}
-                    component={HomeScreen}
-                />
-                <Drawer.Screen
-                    name={componentsNames.Activities.name}
-                    component={TopTabNavigation}
-                   
-                />
-                
-                <Drawer.Screen
-                    name={componentsNames.Restaurant.name}
-                    component={RestaurantScreen}
-                  
-                />
+            borderEndWidth: 2,
+            borderEndColor: colors.primary,
+          },
+          headerStyle: {
+            elevation: 0,
+            shadowColor: 'transparent',
+            backgroundColor: colors.card,
+          },
+          headerTitleAlign: 'center',
+          headerTitle: () => <HeaderIcon />,
+        }}
+      >
+        <Drawer.Screen name={componentsNames.Home.name} component={HomeScreen} />
+        <Drawer.Screen name={componentsNames.Activities.name} component={TopTabNavigation} />
 
-                <Drawer.Screen
-                    name={componentsNames.Gallery.name}
-                    component={GalleryScreen}
-                
-                />
+        <Drawer.Screen name={componentsNames.Restaurant.name} component={RestaurantScreen} />
 
-                <Drawer.Screen
-                    name={componentsNames.Events.name}
-                    component={EventsScreen}
-                    
-                />
+        <Drawer.Screen name={componentsNames.Gallery.name} component={GalleryScreen} />
 
-                <Drawer.Screen
-                    name={componentsNames.Configuration.name}
-                    component={ConfigurationScreen}
-                    
-                />
-            </Drawer.Navigator>
-        </NavigationContainer>
-    )
-}
-export default Navigation
+        <Drawer.Screen name={componentsNames.Events.name} component={EventsScreen} />
+
+        <Drawer.Screen name={componentsNames.Configuration.name} component={ConfigurationScreen} />
+      </Drawer.Navigator>
+    </NavigationContainer>
+  );
+};
+export default Navigation;

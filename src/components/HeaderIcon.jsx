@@ -1,12 +1,13 @@
-import React from 'react'
-import { Image } from "react-native"
+import React from 'react';
+import { Image } from 'react-native';
 
 const HeaderIcon = () => {
-    return (
-        <Image source={require('../../assets/img/iconoClubVerde.png')}
-            style={{ width: 39, height: 31 }}
-        />
-    )
-}
+  return (
+    <Image
+      source={require('../../assets/img/iconoClubVerde.png')}
+      style={{ width: 39, height: 31 }}
+    />
+  );
+};
 
-export default HeaderIcon
+export default HeaderIcon;
