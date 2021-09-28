@@ -68,4 +68,8 @@ export const styles = StyleSheet.create({
     fontSize: 17,
     textAlign: 'center',
   },
+  normalText:{
+    fontSize:19,
+
+  }
 });

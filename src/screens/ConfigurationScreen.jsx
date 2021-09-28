@@ -1,8 +1,9 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { styles } from '../theme/appTheme';
 import { ThemeContext } from '../context/themeContext/ThemeContext';
+import NewSwitch from '../components/NewSwitch'
 
 const ConfigurationScreen = ({ navigation }) => {
   const {
@@ -10,6 +11,25 @@ const ConfigurationScreen = ({ navigation }) => {
     setLightTheme,
     theme: { colors },
   } = useContext(ThemeContext);
+
+  const [isActive, setIsActive] = useState(false)
+  const [themeText, setThemeText] = useState("oscuro")
+
+  const darkTheme = () =>{
+    setDarkTheme()
+    setThemeText('claro')
+  }
+
+  const lightTheme = () => {
+    setLightTheme()
+    setThemeText('oscuro')
+
+  }
+
+  const onChange = (value, field) =>{
+    value === true ? darkTheme() : lightTheme()
+    setIsActive(!isActive)
+}
 
   useEffect(() => {
     navigation.setOptions({
@@ -31,33 +51,11 @@ const ConfigurationScreen = ({ navigation }) => {
       <Text style={{ ...styles.scheduleTitleText, color: colors.primary }}>
         Tema de la aplicación
       </Text>
-      <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
-        <TouchableOpacity
-          style={{
-            backgroundColor: colors.primary,
-            justifyContent: 'center',
-            width: 150,
-            height: 50,
-            borderRadius: 20,
-          }}
-          activeOpacity={0.8}
-          onPress={setLightTheme}
-        >
-          <Text style={{ color: colors.text, textAlign: 'center', fontSize: 22 }}>Claro</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={{
-            backgroundColor: colors.primary,
-            justifyContent: 'center',
-            width: 150,
-            height: 50,
-            borderRadius: 20,
-          }}
-          activeOpacity={0.8}
-          onPress={setDarkTheme}
-        >
-          <Text style={{ color: colors.text, textAlign: 'center', fontSize: 22 }}>Oscuro</Text>
-        </TouchableOpacity>
+      <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
+      <Text style={{ ...styles.normalText, ...styles.globalMargin, color: colors.text }}>Habilitar modo <Text style={{fontWeight:"bold"}}>{themeText}</Text></Text>
+      
+        <NewSwitch isOn={isActive} onChange={(value) => onChange(value)} />
+
       </View>
     </View>
   );
