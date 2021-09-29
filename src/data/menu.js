@@ -30,13 +30,6 @@ export const menuItems = [
     component: componentsNames.Gallery.name,
   },
   {
-    id: 5,
-    title: 'Eventos',
-    icon: 'calendar-outline',
-    color: 'black',
-    component: componentsNames.Events.name,
-  },
-  {
     id: 6,
     title: 'Configuración',
     icon: 'settings-outline',
