@@ -10,6 +10,7 @@ This mobile app contains the next sections:
 
 ### Project structure
 
+```
 cvr-mobile-app
 ├── README.md
 ├── node_modules
@@ -28,7 +29,7 @@ cvr-mobile-app
 │   └── screens
 │   └── theme
 │   └── types
-
+```
 ### `npm start` or `expo start`
 
 1. Runs the app in development mode.
