@@ -7,9 +7,9 @@ export const useActivities = () => {
   const [culturalActivities, setCulturalActivities] = useState();
 
   const getActivities = async () => {
-    const sportsPromise = cvrApi.get('http://192.168.100.37:3000/activities/getSportsActivities');
+    const sportsPromise = cvrApi.get('activities/getSportsActivities');
     const culturalPromise = cvrApi.get(
-      'http://192.168.100.37:3000/activities/getCulturalActivities',
+      'activities/getCulturalActivities',
     );
 
     const response = await Promise.all([sportsPromise, culturalPromise]);

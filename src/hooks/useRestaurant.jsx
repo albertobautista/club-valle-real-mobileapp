@@ -11,13 +11,13 @@ export const useRestaurant = () => {
   });
 
   const getDishes = async () => {
-    const soupDishesPromise = cvrApi.get('http://192.168.100.37:3000/restaurant/getSoupDishes');
+    const soupDishesPromise = cvrApi.get('restaurant/getSoupDishes');
     const ensaladDishesPromise = cvrApi.get(
-      'http://192.168.100.37:3000/restaurant/getEnsaladDishes',
+      'restaurant/getEnsaladDishes',
     );
-    const mainDishesPromise = cvrApi.get('http://192.168.100.37:3000/restaurant/getMainDishes');
+    const mainDishesPromise = cvrApi.get('restaurant/getMainDishes');
     const dessertDishesPromise = cvrApi.get(
-      'http://192.168.100.37:3000/restaurant/getDessertDishes',
+      'restaurant/getDessertDishes',
     );
 
     // const popularPromise = cvrApi.get("popular")
