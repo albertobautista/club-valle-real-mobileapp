@@ -17,7 +17,7 @@ import ActivityDetail from '../components/ActivityDetail';
 
 const ActivityDetailScreen = ({ navigation, route }) => {
   const { activity } = route.params;
-  console.log('ACTIVITY ', activity);
+
   const { name, principalImage } = activity;
   const { top } = useSafeAreaInsets();
 

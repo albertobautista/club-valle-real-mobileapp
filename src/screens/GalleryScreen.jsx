@@ -48,7 +48,6 @@ const GalleryScreen = ({ navigation }) => {
 };
 
 const ImageAlbum = ({ picture }) => {
-  console.log('picture', picture.url);
   const windowWidth = Dimensions.get('window').width;
   const urlImage = picture.url;
   return <AnimatedImage uri={urlImage} style={{ width: windowWidth, height: 200 }} />;

@@ -15,7 +15,6 @@ const RestaurantScreen = ({ navigation }) => {
   const {
     dishesState: { soupDishes, ensaladDishes, mainDishes, dessertDishes },
   } = useRestaurant();
-  console.log('DISHES,', soupDishes);
 
   useEffect(() => {
     navigation.setOptions({

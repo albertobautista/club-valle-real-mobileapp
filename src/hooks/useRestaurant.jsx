@@ -30,7 +30,7 @@ export const useRestaurant = () => {
       mainDishesPromise,
       dessertDishesPromise,
     ]);
-    console.log('REESTSTSATS ', response[0].data.data.dishes);
+
     setDishesState({
       soupDishes: response[0].data.data.dishes,
       ensaladDishes: response[1].data.data.dishes,

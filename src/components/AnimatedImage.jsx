@@ -3,14 +3,12 @@ import { ActivityIndicator, Animated, View } from 'react-native';
 import { useAnimation } from '../hooks/useAnimation';
 
 export const AnimatedImage = ({ uri, style = {} }) => {
-  console.log('uriuriuri', uri);
 
   const { opacity, fadeIn } = useAnimation();
   const [isLoading, setIsLoading] = useState(true);
 
   const finishLoading = () => {
     setIsLoading(false);
-    console.log('FINISSSSS', isLoading);
     fadeIn();
   };
 
