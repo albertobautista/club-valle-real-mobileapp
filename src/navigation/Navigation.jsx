@@ -31,7 +31,6 @@ const Navigation = () => {
         screenOptions={{
           drawerStyle: {
             backgroundColor: colors.card,
-            // width: 270,
             width: windowWidth * 0.65,
 
             borderEndWidth: 2,

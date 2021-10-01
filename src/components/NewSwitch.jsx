@@ -18,7 +18,6 @@ const NewSwitch = ({isOn, onChange}) => {
         <Switch
             trackColor={{ false: "#D9D9DB", true: colors.primary }}
             thumbColor={(Platform.OS === "android" ? colors.primary : "" )}
-            // ios_backgroundColor="#3e3e3e"
             onValueChange={toggleSwitch}
             value={isEnabled}
     />

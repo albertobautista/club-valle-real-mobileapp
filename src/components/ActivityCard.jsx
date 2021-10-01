@@ -4,8 +4,6 @@ import { View, Text, TouchableOpacity, StyleSheet, Dimensions, Image } from 'rea
 import { Ionicons } from '@expo/vector-icons';
 import { ThemeContext } from '../context/themeContext/ThemeContext';
 
-// import { FadeInImage } from './FadeInImage';
-
 const windowWidth = Dimensions.get('window').width;
 
 const ActivityCard = ({ activity }) => {

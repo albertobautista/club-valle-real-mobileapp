@@ -20,10 +20,6 @@ export const useRestaurant = () => {
       'restaurant/getDessertDishes',
     );
 
-    // const popularPromise = cvrApi.get("popular")
-    // const topRatedPromise = cvrApi.get("top_rated")
-    // const upcomingPromise =cvrApi.get("upcoming")
-
     const response = await Promise.all([
       soupDishesPromise,
       ensaladDishesPromise,

@@ -27,7 +27,6 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   avatarContainer: {
-    // alignItems: "flex-start",
     marginTop: 10,
     marginLeft: 30,
     flexDirection: 'row',
@@ -57,7 +56,6 @@ export const styles = StyleSheet.create({
   },
   scheduleContainer: {
     marginVertical: 30,
-    // backgroundColor:"red"
   },
   scheduleTitleText: {
     fontSize: 33,

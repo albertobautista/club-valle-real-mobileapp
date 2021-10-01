@@ -47,9 +47,7 @@ export const TopTabNavigation = ({ navigation }) => {
           backgroundColor: colors.primary,
           height: 2,
         },
-        // tabBarLabelStyle: { color:colors.text },
         tabBarStyle: {
-          // shadowColor: "transparent",
           elevation: 0,
           backgroundColor: colors.card,
           size: 1,

@@ -1,8 +1,6 @@
-import React, { useContext, useEffect } from 'react';
-import { View, Text, TouchableOpacity, Image, FlatList, ActivityIndicator } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { styles } from '../theme/appTheme';
-// import { sportActivities } from '../api/sportsActivities';
+import React, { useContext } from 'react';
+import { View, FlatList, ActivityIndicator } from 'react-native';
+
 import ActivityCard from '../components/ActivityCard';
 import { ThemeContext } from '../context/themeContext/ThemeContext';
 import { useActivities } from '../hooks/useActivities';
